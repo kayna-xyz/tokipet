@@ -1,0 +1,32 @@
+{
+  "name": "tokipet",
+  "version": "0.1.0",
+  "description": "A pixel pet in the Claude Code status bar \u2014 it grows on every token you burn",
+  "license": "MIT",
+  "bin": {
+    "pet": "bin/pet.js",
+    "tokipet": "bin/pet.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "claude",
+    "claude-code",
+    "statusline",
+    "terminal",
+    "pet",
+    "tamagotchi",
+    "pixel-art",
+    "tokens",
+    "tui",
+    "ascii"
+  ],
+  "author": "Kayna Huang (https://x.com/kayna_xyz)",
+  "homepage": "https://www.npmjs.com/package/tokipet"
+}
