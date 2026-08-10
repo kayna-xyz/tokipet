@@ -29,6 +29,8 @@ pet setup
 
 Claude Code를 재시작하면, 강아지가 이미 기다리고 있습니다.
 
+> `EACCES: permission denied`가 뜨면 `sudo npm install -g tokipet`으로 설치하세요 — 단 `pet setup`에는 절대 sudo를 붙이지 마세요.
+
 `pet setup`이 모든 걸 자동으로 연결합니다: 상태 바 렌더러, 타이핑 감지 훅,
 슬래시 커맨드 2개 — `~/.claude/settings.json`에 조심스럽게 병합됩니다
 (백업 유지, `pet setup --remove`로 전부 되돌릴 수 있어요).

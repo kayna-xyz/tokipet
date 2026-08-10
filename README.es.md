@@ -29,6 +29,8 @@ pet setup
 
 Reinicia Claude Code. Tu perro ya te está esperando.
 
+> ¿`EACCES: permission denied`? Instala con `sudo npm install -g tokipet` — pero nunca uses sudo con `pet setup`.
+
 `pet setup` lo conecta todo automáticamente: el renderizador de la barra de estado,
 un hook que detecta cuando escribes y dos comandos slash — fusionados con cuidado en
 `~/.claude/settings.json` (se guarda copia de seguridad; `pet setup --remove` lo revierte todo).
