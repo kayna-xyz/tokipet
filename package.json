@@ -28,5 +28,12 @@
     "ascii"
   ],
   "author": "Kayna Huang (https://x.com/kayna_xyz)",
-  "homepage": "https://www.npmjs.com/package/tokipet"
+  "homepage": "https://tokipet.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayna-xyz/tokipet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kayna-xyz/tokipet/issues"
+  }
 }
