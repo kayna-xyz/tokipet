@@ -196,12 +196,35 @@
   .foot a{color:var(--sub);text-decoration:none}
   .foot a:hover{color:var(--ink)}
   .foot .right{margin-left:auto;display:flex;gap:20px}
+
+  /* mobile */
+  @media(max-width:640px){
+    body{padding-top:78px}
+    .page{padding:0 20px}
+    .pillbar{gap:14px;padding:9px 10px 9px 16px}
+    .pillbar.mini{gap:12px;padding:7px 8px 7px 14px}
+    .pillbar a.hide-sm{display:none}
+    .pillbar .btn-bs{padding:7px 14px}
+    header{padding:34px 0 0}
+    section{padding:84px 0 0}
+    .hero-term{margin-top:40px}
+    .term pre,.iface .term pre{font-size:11.5px}
+    #code-pane,#yard-code{height:244px}
+    #yard,#yard-code,#yard-input{overflow-x:auto}
+    #pet-pane,#yard{min-height:96px}
+    .seg button{padding:6px 14px}
+    .pop{max-width:calc(100vw - 48px)}
+    .states{margin-top:40px;gap:40px}
+    .steps{margin-top:40px}
+    .foot{flex-wrap:wrap;row-gap:10px}
+    .foot .right{margin-left:0}
+  }
 </style>
 
 <nav>
   <div class="pillbar" id="pillbar">
     <a class="brand" href="#top">TOKIPET</a>
-    <a class="link" href="#top">Home</a>
+    <a class="link hide-sm" href="#top">Home</a>
     <a class="link" href="#vs">Q&amp;A</a>
     <a class="link" href="https://x.com/kayna_xyz" target="_blank" rel="noopener">Feedback</a>
     <a class="btn-bs" href="#install">Install</a>
@@ -310,6 +333,17 @@
             <div class="ios-row" style="padding-left:0;padding-right:0"><div class="k">Talk</div><div>In character, six languages.</div><div class="b">Reactions, not conversation.</div></div>
             <div class="ios-row" style="padding-left:0;padding-right:0"><div class="k">Money</div><div>Tells you if your plan paid for itself.</div><div class="b">—</div></div>
             <div class="ios-row" style="padding-left:0;padding-right:0"><div class="k">Data</div><div>100% local, zero API calls.</div><div class="b">Varies.</div></div>
+          </div>
+        </details>
+        <details>
+          <summary>How do I install and launch it, exactly?</summary>
+          <div class="a">
+            <ol>
+              <li>Have Node.js 16+ (from <a href="https://nodejs.org" target="_blank" rel="noopener">nodejs.org</a>, the LTS button).</li>
+              <li>Run <code>npm install -g tokipet</code>. On a Mac this usually needs <code>sudo npm install -g tokipet</code> (type your system password).</li>
+              <li>Run <code>pet setup</code> — <b>never</b> with sudo.</li>
+              <li><b>Launching: the pet lives inside Claude Code.</b> It will not appear in a plain terminal — open (or restart) Claude Code, and the pet renders in the status bar under the input box. Then <code>/CLIadd</code> to configure it.</li>
+            </ol>
           </div>
         </details>
         <details>
